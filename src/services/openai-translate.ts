@@ -60,7 +60,8 @@ async function translateSingleString(
 function generatePrompt(str: string, args: TServiceArgs) {
   const capitalizedText = str[0].toUpperCase() + str.slice(1).toLowerCase();
   return (
-    `Translate the following text from ${args.srcLng} into ${args.targetLng}: ` +
+    `I need translations for a weather app called "Yawa: Weather Forecast". These translations should be colloquially.
+    Translate the following text from ${args.srcLng} into ${args.targetLng}: ` +
     capitalizedText
   );
 }
